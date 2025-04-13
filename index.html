@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLinks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 3D Background Effects -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- Parallax Container -->
+    <div class="parallax-container" id="parallax-container"></div>
+    
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon"><i class="fas fa-link"></i></span>
+            <span class="logo-text">LinkNest</span>
+        </div>
+        <div class="nav-actions">
+            <a href="https://github.com/your-username/LinkNest" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Organize Your Digital Universe</h1>
+            <p class="hero-tagline">Save, categorize, and discover your favorite developer resources in one beautiful place.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bento-container">
+        <!-- Add Link Card -->
+        <section class="bento-card form-card">
+            <h2>Add New Link</h2>
+            <form id="add-link-form">
+                <div class="form-group">
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url" required placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="categories">Categories:</label>
+                    <input type="text" id="categories" name="categories" placeholder="e.g., react,css,learning">
+                </div>
+                <button type="submit" id="submit-btn"><i class="fas fa-plus-circle"></i> Add Link</button>
+            </form>
+        </section>
+
+        <!-- Stats Card -->
+        <section class="bento-card stats-card">
+            <div class="stat">
+                <span id="total-links">0</span>
+                <label>Total Links</label>
+            </div>
+            <div class="stat">
+                <span id="total-categories">0</span>
+                <label>Categories</label>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="bento-card actions-card">
+            <h2>Quick Filters</h2>
+            <div id="category-filters" class="category-tags">
+                <!-- Category filters will be added by JavaScript -->
+                <span class="tag">All</span>
+            </div>
+        </section>
+
+        <!-- Links Grid -->
+        <section class="bento-card links-card">
+            <h2>Your Collection</h2>
+            <div id="links-list" class="links-grid">
+                <!-- Links will be displayed here by JavaScript -->
+                <p class="empty-state">Your saved links will appear here</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LinkNest - Your Personal Web Collection</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 
